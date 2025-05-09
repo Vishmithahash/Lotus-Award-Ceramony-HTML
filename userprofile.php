@@ -1,0 +1,161 @@
+<!Doctype html>
+<html>
+<head>
+   <title>Vote Page</title>
+   <link rel="stylesheet" href="styles/userprofile.css">
+</head>
+<body background="images/backgroundvote.jpg">
+  <header>
+
+    <!-- add a horizontal menu -->
+    <nav class="navi">
+      <div class="navdiv">
+        <div><img src = "images/logo2.png" width="100px" height="90px"></div>
+    <ul>
+    <li class="list"><a href="index.html">Home</a></li>
+    <li class="list"><a href="news.html">Vote</a></li>
+    <li class="list"><a href="#">Nominees</a></li>
+    <li class="list"><a href="#">Winners</a></li>
+    <li class="list"><a href="#">Sponsor</a></li>
+    <button class="b1"><a href="#">SIGN IN</a></button>
+    <button class="b1"><a href="#">SIGN OUT</a></button>
+    </ul>
+    <div><img class="c4" src="images/user.png" width="160px" height="80px"><br>
+    <p class="c6"><b><a class="c5" href="#">USER PROFILE</a></b></p></div>
+    </div>
+    </nav>
+    <hr class="line1">
+    </header>
+
+<br><br>
+<h1 class="a1">ADMINISTRATOR</h1><br><br>
+
+
+
+<div class="container">
+
+<div class="gallery">
+  <img src="images/admin.jpg">
+</div> 
+
+<div class="gallery">
+  <h2><b>Name:</b>Pooja Umashankar</h2><br>
+  <h2><b>Age:</b>33</h2><br>
+  <h2><b>Gender:</b>Male</h2><br>
+  <h2><b>Duties:</b></h2>
+</div> 
+</div>
+
+<br>
+<br>
+
+<h1 class="a1">Manage Awards</h1><br><br>
+<div class="container2">
+
+  <div class="gallery">
+    <h2 align = "center">Add Award Category</h2><br>
+    <hr class="line1"><br>
+    <div class="te1">
+    <input type = "text" placeholder=" Award Name" required><br><br>
+    <input type = "text" placeholder="Won Actress And Won Actor" required><br><br><br>
+    <a class="btn btn-primary" href="/ushara/Awards.php" role="button" >ADD</a>
+  </div>
+</div>
+</div>
+
+<br><br>
+<table class="table1">
+  <thead>
+    <tr>
+      <th>A ID</th>
+      <th>Award Name</th>
+      <th>Won Actress And Won Actor</th>
+      <th>Created At</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <?php
+    $servername="localhost";
+    $username="root";
+    $password="";
+    $database="ushara";
+    
+
+    //create connection
+    $connection = new mysqli($servername, $username, $password, $database);
+    
+    //check connection
+    if($connection->connect_error){
+      die("Connection failed:" . $connection->connect_error);
+    }
+    
+
+    //read all row from database table
+    $sql="SELECT * FROM Awards";
+    $result=$connection->query($sql);
+
+    if(!$result){
+      die("Invalid query: " . $connection->error);
+    }
+
+    //read data of each row
+    while($row = $result->fetch_assoc()){
+      echo "
+    <tr>
+      <td>$row[A_ID]</td>
+      <td>$row[Award_Name]</td>
+      <td>$row[Won_Actress_And_Won_Actor]</td>
+      
+      <td>
+        <a class='btn btn-primary btn-sm' href='/ushara/edit.php?id=$row[A_ID]'>Edit</a>
+        <a class='btn btn-danger btn-sm' href='/ushara/delete.php?id=$row[A_ID]'>Delete</a>
+      </td>
+    </tr>
+      ";
+    }
+    ?>
+
+    
+  </tbody>
+
+</table>
+
+<br><br>
+
+    <!-- add a horizontal line (d)-->
+<hr class="line1">
+<!-- add a footer -->
+<footer>
+    <nav class="navif">
+  <div class="navdiv">
+    <div><img src = "images/logo2.png" width="100px" height="90px"></div>
+
+    <div>
+        <p class="c7">Lotus Award Ceremony proudly announce that this is the only tele/film awarding ceremony <br>in the region held within the 1st quarter immediately after the end of year under review. <br>No doubt that both artists and television viewers will welcome this move to evaluate the<br> TV program while they are still live in good memories of them, despite the challenges in<br> evaluating and organizing the event in such a short span of time<br><br>Copyright &copy;2024 All Rights Reserved | IWT</p>
+    </div>
+
+      <div>
+          <a href=""><img  class="classimg" src="images/fb.png" width="90px" height="80px"></a>
+          <a href=""><img src="images/ins.png" width="90px" height="80px"></a>
+          <a href=""><img src="images/tw.png" width="100px" height="90px"></a><br>
+          <ul>
+            <li class="list2"><a href="">Home</a></li>
+            <li class="list2"><a href="">News</a></li>
+            <li class="list2"><a href="">About</a></li>
+            <li class="list2"><a href="">Contact Us</a></li>
+            <li class="list2"><a href="">our Team</a></li>
+         </ul>
+       </div>
+      </div>
+    </nav>
+
+
+
+
+ 
+</footer>
+
+</body>
+</html>

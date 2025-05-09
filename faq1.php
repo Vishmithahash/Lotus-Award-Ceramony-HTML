@@ -1,0 +1,110 @@
+
+
+
+<!Doctype html>
+<html>
+<head>
+   <title>Header and Footer</title>
+   <link rel="stylesheet" href="styles1/faq1.css">
+   <link rel="stylesheet" href="styles1/login.css">
+</head>
+
+<body>
+<header>
+
+
+
+<!-- add a horizontal menu -->
+<nav class="navi">
+  <div class="navdiv">
+    <div><img src = "images1/logo3.png" width="120px" height="120px"></div>
+<ul>
+<li class="list"><a href="homee.php">Home</a></li>
+<li class="list"><a href="vote.php">Vote</a></li>
+<li class="list"><a href="inex.php">Nominees</a></li>
+<li class="list"><a href="Winners.php">Winners</a></li>
+<li class="list"><a href="Sponser.php">Sponsor</a></li>
+<li class="list"><a href="enroll.php">Admin</a></li>
+<button class="bton"><a href="login.php">LOGIN</a></button>
+
+</ul>
+<div><img class="c4" src="images1/user.png" width="160px" height="80px"><br>
+<p class="c6"><b><a class="c5" href="home.php">USER PROFILE</a></b></p></div>
+</div>
+</nav>
+<!-- add a horizontal line -->
+<hr class="line1">
+</header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="by">
+  <div class="faq-container">
+  <h2>FAQ</h2>
+  <div class="question">
+    <h3>How many nomination can i submit?</h3>
+    <p>You can submit one nomination per category</p>
+  </div>
+  <div class="question">
+    <h3>How are the winners selected?</h3>
+    <p>Winners are selected through a public voting</p>
+  </div>
+  <div class="question">
+    <h3>Can i vote more than once?</h3>
+    <p>Each user is allowed to vote only once per award categorym </p>
+  </div>
+  <div class="qbtn">
+    
+    <button class="qbtn1"><a href="faq2.php">Question</a></button>
+  
+  </div>
+ 
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr class="line1">
+<!-- add a footer -->
+<footer>
+    <nav class="navif">
+  <div class="navdiv">
+    <div><img src = "images1/award.png" width="100px" height="100px"></div>
+
+    <div>
+        <p class="c7">Lotus Award Ceremony proudly announce that this is the only tele/film awarding ceremony <br>in the region held within the 1st quarter immediately after the end of year under review. <br>No doubt that both artists and television viewers will welcome this move to evaluate the<br> TV program while they are still live in good memories of them, despite the challenges in<br> evaluating and organizing the event in such a short span of time<br><br>Copyright &copy;2024 All Rights Reserved | IWT</p>
+    </div>
+
+      <div>
+          <a href=""><img  class="classimg" src="images1/fb.png" width="70px" height="65px"></a>
+          <a href=""><img class="classimg2" src="images1/ins.png" width="70px" height="65px"></a>
+          <a href=""><img class="classimg2" src="images1/tw.png" width="80px" height="75px"></a><br>
+          <ul>
+          <li class="list2"><a href="About us.php">About Us</a></li>
+            <li class="list2"><a href="Contact us.php">Contact Us</a></li>
+            <li class="list2"><a href="News.php">News</a></li>
+            <li class="list2"><a href="Terms & conditions.php">Terms & Conditions</a></li>
+            <li class="list2"><a href="Privacy.php">Privacy Cookies</a></li>
+            <li class="list2"><a href="faq1.php">F&Q</a></li>
+         </ul>
+       </div>
+      </div>
+    </nav>
+ 
+</footer>
+
+</body>
+</html>

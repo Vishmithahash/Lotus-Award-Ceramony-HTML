@@ -1,0 +1,163 @@
+body
+    {
+		background-image:URL("../images/Winner bg.jpg");
+	}
+	
+.bn1 {
+	transform:translated3d;
+	transition: all 0.35s ease 0s;
+	width:15px;
+}
+	
+h1{
+	color:yellow;
+	font-size:50px;
+	
+	
+  }
+  
+.navia{
+	background:none;
+	padding:5px;
+	
+	
+}
+h2{
+	color:yellow;
+	font-size:30px;
+	
+  }
+h3{
+	color:orange;
+	font-size:20px;
+	
+}
+h4{
+	color:orange;
+	font-size:20px;
+}
+h5{
+	color:orange;
+	font-size:20px;
+}
+h6{
+	color:yellow;
+	font-size:30px;
+}
+
+
+.b{
+	
+	margin-right:40px;
+}
+----------------------------
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+	
+}
+
+.slides{
+   width: 500%; 
+   height:500px;
+   display: flex;
+  
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 900px;
+    height: 500px;
+	
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid yellow;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: yellow;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid yellow;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: yellow;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: yellow;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: yellow;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: yellow;
+}
+
+

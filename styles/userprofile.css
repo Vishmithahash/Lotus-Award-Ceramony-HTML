@@ -1,0 +1,161 @@
+*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+.line1{
+	border-top:2px solid black;
+}
+
+
+.navi{
+	background:crimson;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.navdiv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	}
+
+li{
+	list-style: none;
+	display: inline-block;
+}
+
+li a{
+	color:white;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 25px;
+}
+li.list a:hover{
+	color:black;
+	transition: 0.5s;
+}
+
+.b1{
+	background-color: white;
+	margin-left: 10px;
+	border-radius:10px;
+	padding: 10px;
+	width:120px;
+	margin-bottom: 30px;
+}
+.b1 a{
+	color:crimson;
+	font-weight: bold;
+	font-size:15px;
+}
+.b1:hover{
+	background-color: black;
+}
+
+
+.c4{
+	margin-top: 10px;
+}
+
+.c5{
+	color:white;
+	margin-left: 20px;
+	
+}
+.c6{
+	:hover{
+		color: black;
+		transition: 0.5s;
+	}
+}
+body{
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.a1{
+    color: white;
+    padding-left: 660px;
+}
+
+.vd1{
+	padding: 15px;
+	text-align: center;
+}
+
+.gallery{
+	margin: 5px;
+	border: 1px solid #ccc;
+	float:left;
+	width: 390px;
+}
+
+.gallery img{
+	width:100%;
+	height:auto;
+}
+
+.container{
+	max-width: 800px;
+	margin: auto;
+	background: #f2f2f2;
+	overflow: auto;
+}
+.container2{
+	max-width: 400px;
+	margin: auto;
+	background: #f2f2f2;
+	overflow: auto;
+}
+
+.te1{
+	padding-left: 75px;
+}
+
+.te1 input{
+	width: 240px;
+	height: 50px;
+	border-radius: 20px;
+	text-align: center;
+}
+.b1add{
+	background-color: white;
+	margin-left: 10px;
+	border-radius:10px;
+	padding: 10px;
+	width:120px;
+	margin-bottom: 30px;
+	
+}
+.b1add:hover{
+	background-color: red;
+}
+
+
+
+
+
+.navif{
+	background:black;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.c7{
+	color:white;
+}
+
+.classimg{
+	margin-left: 120px;
+}
+
+li.list2 a:hover{
+	color:burlywood;
+	transition: 0.5s;
+}

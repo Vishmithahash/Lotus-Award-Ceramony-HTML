@@ -1,0 +1,114 @@
+
+*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+
+
+body{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+.f1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: black;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+.b2{
+	background-color: black;
+}
+
+form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: black;
+    color: white;
+}
+form.button{
+	background-color: black;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+	background: #f2f2f2;
+	overflow: auto;
+}
+.gallery{
+	margin: 5px;
+	border: 1px solid #ccc;
+	float:left;
+	width: 390px;
+}
+.gallery img{
+	width:100%;
+	height:auto;
+}
+.vd1{
+	padding: 15px;
+	text-align: center;
+}
+.vdb{
+	color: black;
+	border-radius: 50px;
+	width: 100px;
+	height: 40px;
+}
+.vdb:hover{
+	background-color: crimson;
+	transition: 0.5s;
+}
